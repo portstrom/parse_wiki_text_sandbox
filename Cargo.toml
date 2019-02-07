@@ -1,0 +1,16 @@
+[package]
+authors = ["Fredrik Portström <https://portstrom.com>"]
+license-file = "LICENSE"
+name = "parse_wiki_text_sandbox"
+version = "0.1.0"
+
+[dependencies]
+parse_wiki_text = { path = "../parse_wiki_text" }
+wasm-bindgen = "0.2.33"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+opt-level = "s"

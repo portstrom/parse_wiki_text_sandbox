@@ -1,0 +1,52 @@
+body {
+    background: #eee;
+    box-sizing: border-box;
+    display: flex;
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 4;
+}
+
+textarea {
+    border: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    flex: 1;
+    margin: 4;
+    outline: 0;
+    padding: 8;
+    resize: none;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.node {
+    margin: 8 0;
+}
+
+.node .node {
+    margin-left: 32;
+}
+
+.node:first-child {
+    margin-top: 0;
+}
+
+.node:last-child {
+    margin-bottom: 0;
+}
+
+.position {
+    color: #aaa;
+}
+
+.result {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    flex: 1;
+    margin: 4;
+    overflow: auto;
+    padding: 8;
+}
